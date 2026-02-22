@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Program%20Files/Git/leave-tracker-web/sw.js', { scope: '/Program%20Files/Git/leave-tracker-web/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/leave-tracker-web/sw.js', { scope: '/leave-tracker-web/' })})}
