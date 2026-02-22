@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  // Set by CI for GitHub Pages; locally runs at /
-  base: process.env.VITE_BASE_PATH || '/',
+  // /leave-tracker-web/ on GitHub Pages, / for local dev
+  base: process.env.NODE_ENV === 'production' ? '/leave-tracker-web/' : '/',
   plugins: [
     react(),
     VitePWA({
